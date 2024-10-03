@@ -9,15 +9,15 @@ Novu Expo is a mobile application built with Expo and `@novu/react/hooks` packag
     <tr>
       <td align="center" width="33%">
         <img src="https://github.com/user-attachments/assets/1f8c3a08-ac6a-4e02-b8c0-ab835e65116e" alt="Home Screen" width="200"/><br>
-        <em>Home Screen</em>
+        <em>Home Screen / Changelog</em>
       </td>
       <td align="center" width="33%">
         <img src="https://github.com/user-attachments/assets/1cb80422-28ec-4a31-b8d5-acd05bdacf46" alt="Notification Screen" width="200"/><br>
-        <em>Notification Screen</em>
+        <em>Updates Screen</em>
       </td>
       <td align="center" width="33%">
         <img src="https://github.com/user-attachments/assets/fa071ff7-19fc-448a-8644-134a425ee95b" alt="Settings Screen" width="200"/><br>
-        <em>Settings Screen</em>
+        <em>handleLongPress Screen</em>
       </td>
     </tr>
   </table>
