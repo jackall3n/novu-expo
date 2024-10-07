@@ -1,6 +1,6 @@
 # Novu Expo
 
-Novu Expo is a mobile application built with Expo and `@novu/react/hooks` package, showcasing the integration of Novu's notification inbox (in-app) within a mobile app.
+Novu Expo is a mobile application built with Expo and `@novu/react-native` package, showcasing the integration of Novu's notification inbox (in-app) within a mobile app.
 
 ## Screenshots
 

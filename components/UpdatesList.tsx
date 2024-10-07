@@ -1,12 +1,22 @@
-import React from 'react';
-import { FlatList, StyleSheet, View, Text, ActivityIndicator, RefreshControl } from 'react-native';
-import { useNotifications } from '@novu/react/hooks';
-import UpdateDesign from './UpdateDesign';
+import React from "react";
+import {
+  FlatList,
+  StyleSheet,
+  View,
+  Text,
+  ActivityIndicator,
+  RefreshControl,
+} from "react-native";
+import { useNotifications } from "@novu/react-native";
+import UpdateDesign from "./UpdateDesign";
 
 const UpdatesList: React.FC = () => {
-  const { notifications, isLoading, fetchMore, hasMore, refetch } = useNotifications();
+  const { notifications, isLoading, fetchMore, hasMore, refetch } =
+    useNotifications();
 
-  const renderItem = ({ item }: { item: any }) => <UpdateDesign notification={item} />;
+  const renderItem = ({ item }: { item: any }) => (
+    <UpdateDesign notification={item} />
+  );
 
   const renderFooter = () => {
     if (!hasMore) return null;
@@ -42,7 +52,11 @@ const UpdatesList: React.FC = () => {
       ListFooterComponent={renderFooter}
       ListEmptyComponent={renderEmpty}
       refreshControl={
-        <RefreshControl refreshing={isLoading} onRefresh={refetch} colors={['#2196F3']} />
+        <RefreshControl
+          refreshing={isLoading}
+          onRefresh={refetch}
+          colors={["#2196F3"]}
+        />
       }
     />
   );
@@ -55,22 +69,22 @@ const styles = StyleSheet.create({
   },
   emptyContainer: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     paddingVertical: 32,
   },
   emptyText: {
     fontSize: 18,
-    color: '#757575',
+    color: "#757575",
   },
   loadingContainer: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   loadingMore: {
     paddingVertical: 16,
-    alignItems: 'center',
+    alignItems: "center",
   },
 });
 

@@ -1,7 +1,7 @@
-import React from 'react';
-import { StyleSheet, SafeAreaView, StatusBar } from 'react-native';
-import UpdatesList from '@/components/UpdatesList';
-import { NovuProvider } from '@novu/react/hooks';
+import React from "react";
+import { StyleSheet, SafeAreaView, StatusBar } from "react-native";
+import UpdatesList from "@/components/UpdatesList";
+import { NovuProvider } from "@novu/react-native";
 
 export default function UpdatesScreen() {
   return (
@@ -20,6 +20,6 @@ export default function UpdatesScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: "white",
   },
 });
